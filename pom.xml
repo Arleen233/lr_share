@@ -87,11 +87,26 @@
             <artifactId>poi-ooxml</artifactId>
             <version>4.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
 
+
+    <profiles>
+    <profile>
+        <id>sharing</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <properties>
+            <mysql.url>jdbc:mysql://148.70.106.202:3917/sharing?useSSL=false&amp;tinyInt1isBit=false</mysql.url>
+        </properties>
+    </profile>
+    </profiles>
+
     <build>
-
-
         <plugins>
 <!--            <plugin>-->
 <!--                <groupId>org.springframework.boot</groupId>-->

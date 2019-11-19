@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybaits.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liang.share.lrshare.dao.SchoolDao">
+
+    <resultMap id="schoolMap" type="com.liang.share.lrshare.model.school.School">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="type_number" property="typeNumber" jdbcType="VARCHAR"/>
+        <result column="type_name" property="typeName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="addPassword">
+        INSERT into  school(password) values ({#password}) where type_number = {#typeNumber}
+    </insert>
+
+    <select id="getAll" resultMap="schoolMap">
+        SELECT * from  school
+        <where>
+            <if test="typeNumber != null and typeNumber != ''">
+                and typeNumber = #{typeNumber}
+            </if>
+            <if test="id != null and id != 0">
+                and id = #{id}
+            </if>
+        </where>
+    </select>
+
+</mapper>
