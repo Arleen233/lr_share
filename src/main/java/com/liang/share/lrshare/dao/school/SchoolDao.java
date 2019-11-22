@@ -1,4 +1,4 @@
-package com.liang.share.lrshare.dao;
+package com.liang.share.lrshare.dao.school;
 
 import com.liang.share.lrshare.model.school.School;
 import org.apache.ibatis.annotations.Mapper;

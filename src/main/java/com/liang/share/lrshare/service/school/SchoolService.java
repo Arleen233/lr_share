@@ -1,4 +1,4 @@
-package com.liang.share.lrshare.service;
+package com.liang.share.lrshare.service.school;
 
 import com.liang.share.lrshare.model.school.School;
 import org.springframework.stereotype.Service;

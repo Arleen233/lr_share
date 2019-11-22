@@ -1,9 +1,9 @@
-package com.liang.share.lrshare.service.impl;
+package com.liang.share.lrshare.service.school.impl;
 
 import com.github.pagehelper.util.StringUtil;
-import com.liang.share.lrshare.dao.SchoolDao;
+import com.liang.share.lrshare.dao.school.SchoolDao;
 import com.liang.share.lrshare.model.school.School;
-import com.liang.share.lrshare.service.SchoolService;
+import com.liang.share.lrshare.service.school.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

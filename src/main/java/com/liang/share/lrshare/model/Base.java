@@ -5,7 +5,7 @@ package com.liang.share.lrshare.model;
  */
 public class Base {
     private int id;
-    private String gmtTime;
+    private String gmtCreate;
 
     public int getId() {
         return id;
@@ -15,19 +15,19 @@ public class Base {
         this.id = id;
     }
 
-    public String getGmtTime() {
-        return gmtTime;
+    public String getGmtCreate() {
+        return gmtCreate;
     }
 
-    public void setGmtTime(String gmtTime) {
-        this.gmtTime = gmtTime;
+    public void setGmtCreate(String gmtCreate) {
+        this.gmtCreate = gmtCreate;
     }
 
     @Override
     public String toString() {
         return "Base{" +
                 "id=" + id +
-                ", gmtTime='" + gmtTime + '\'' +
+                ", gmtCreate='" + gmtCreate + '\'' +
                 '}';
     }
 }

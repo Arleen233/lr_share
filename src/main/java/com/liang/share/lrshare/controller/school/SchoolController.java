@@ -1,7 +1,7 @@
-package com.liang.share.lrshare.controller;
+package com.liang.share.lrshare.controller.school;
 
 import com.liang.share.lrshare.model.school.School;
-import com.liang.share.lrshare.service.SchoolService;
+import com.liang.share.lrshare.service.school.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +26,7 @@ public class SchoolController {
      */
     @ResponseBody
     @PostMapping("/addPassword")
-    public boolean addPassword(@RequestParam("typeNumber")String typeNumber,@RequestParam("password") String password){
+    public boolean addPassword(@RequestParam("schoolNumber")String typeNumber,@RequestParam("pass") String password){
         return schoolService.addPassword(Integer.parseInt(typeNumber),password);
     }
 
