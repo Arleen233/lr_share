@@ -3,7 +3,13 @@ server:
 spring:
   application:
     name: sharing
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
-      suffix: .jsp
+#  mvc:
+#    view:
+#      prefix: /src/page
+#      suffix: .vue
+  datasource:
+    druid:
+      username: cqx
+      password: sgiw*72IsW(2LDsg
+      db-type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver

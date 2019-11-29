@@ -1,4 +1,4 @@
-package com.liang.share.lrshare.model.student.impl;
+package com.liang.share.lrshare.service.student.impl;
 
 import com.github.pagehelper.util.StringUtil;
 import com.liang.share.lrshare.dao.student.StudentDao;
@@ -6,7 +6,9 @@ import com.liang.share.lrshare.model.student.Student;
 import com.liang.share.lrshare.service.student.StudentService;
 import com.liang.share.lrshare.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentDao studentDao;

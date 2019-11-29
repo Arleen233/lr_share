@@ -5,9 +5,11 @@ import com.liang.share.lrshare.dao.school.SchoolDao;
 import com.liang.share.lrshare.model.school.School;
 import com.liang.share.lrshare.service.school.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SchoolServiceImpl implements SchoolService {
     @Autowired
     private SchoolDao schoolDao;

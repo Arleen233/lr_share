@@ -23,5 +23,10 @@ public class StudentController {
                            @RequestParam("number")int studentNumber,@RequestParam("type")int type){
         return studentService.addUser(userName,password,major,typeNumber,studentNumber,type);
     }
+    /**
+     * 跳转到注册页面
+     */
+    @RequestMapping("register")
+    public String register(){return "register";}
 
 }
